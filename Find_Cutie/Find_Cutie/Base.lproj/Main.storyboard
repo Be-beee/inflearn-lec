@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3KG-8A-uJa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Find_Cutie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jc3-ha-pf7">
+                                <rect key="frame" x="20" y="108" width="374" height="301"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="301" id="9mn-ph-5iW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo1-kS-WbO">
+                                <rect key="frame" x="172.5" y="429" width="69" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIP-60-RuZ">
+                                <rect key="frame" x="172.5" y="484" width="69" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wo1-kS-WbO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AaC-6O-J90"/>
+                            <constraint firstItem="wIP-60-RuZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LEX-Ja-Hk9"/>
+                            <constraint firstItem="wo1-kS-WbO" firstAttribute="top" secondItem="jc3-ha-pf7" secondAttribute="bottom" constant="20" id="OHf-Vu-Rru"/>
+                            <constraint firstItem="jc3-ha-pf7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Pgd-xn-Wob"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jc3-ha-pf7" secondAttribute="trailing" constant="20" id="Qfq-y5-PcT"/>
+                            <constraint firstItem="wIP-60-RuZ" firstAttribute="top" secondItem="wo1-kS-WbO" secondAttribute="bottom" constant="20" id="fkG-Eu-Skh"/>
+                            <constraint firstItem="jc3-ha-pf7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rmD-lf-K0E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hSd-Ud-ePF">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="organize" id="yLL-Vz-0DK">
+                                <connections>
+                                    <action selector="openPhotoLibrary:" destination="BYZ-38-t0r" id="RV1-Zf-7Yr"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="camera" id="TIv-d8-eLh">
+                                <connections>
+                                    <action selector="showCamera:" destination="BYZ-38-t0r" id="srX-bT-LrX"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dinoImageView" destination="jc3-ha-pf7" id="QnI-ni-Buy"/>
+                        <outlet property="nameLabel" destination="wo1-kS-WbO" id="LT5-So-lvd"/>
+                        <outlet property="percentLabel" destination="wIP-60-RuZ" id="su9-sS-q45"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630.43478260869574" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N1Q-35-IWF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3KG-8A-uJa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6y3-Jg-5vi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DOl-3a-vy4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9i-7s-d8Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278.26086956521743" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>

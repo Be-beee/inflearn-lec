@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yOQ-Lh-LM3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lec8_10_Multiplier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYL-YW-Soq">
+                                <rect key="frame" x="260.5" y="582" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Ev1-8L-G21"/>
+                                    <constraint firstAttribute="height" constant="100" id="cbl-nR-nQh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsK-g3-Iq4">
+                                <rect key="frame" x="260.5" y="214" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8r2-ka-eRN"/>
+                                    <constraint firstAttribute="height" constant="100" id="RxH-v7-DKi"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIo-rk-DJB">
+                                <rect key="frame" x="53.5" y="214" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Uj8-dm-oh3"/>
+                                    <constraint firstAttribute="width" constant="100" id="g4u-Ml-Ql5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55K-5U-YGv">
+                                <rect key="frame" x="53.5" y="582" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="RmH-BH-FwY"/>
+                                    <constraint firstAttribute="height" constant="100" id="ixn-ff-Lxe"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebD-Yj-47L">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Wbm-nP-XQt" kind="show" id="wDQ-AI-hpW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lYL-YW-Soq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" constant="-40" id="4Eq-pS-W13"/>
+                            <constraint firstItem="ebD-Yj-47L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6rL-Ji-hZZ"/>
+                            <constraint firstItem="fsK-g3-Iq4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" constant="40" id="B50-z0-8wE"/>
+                            <constraint firstItem="55K-5U-YGv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" constant="-40" id="Eca-xa-pvz"/>
+                            <constraint firstItem="55K-5U-YGv" firstAttribute="centerX" secondItem="iKs-xT-cqW" secondAttribute="centerX" multiplier="0.5" id="K1q-5Y-EUw"/>
+                            <constraint firstItem="fsK-g3-Iq4" firstAttribute="centerX" secondItem="iKs-xT-cqW" secondAttribute="centerX" multiplier="1.5" id="PCO-Ha-f28"/>
+                            <constraint firstItem="lYL-YW-Soq" firstAttribute="centerX" secondItem="iKs-xT-cqW" secondAttribute="centerX" multiplier="1.5" id="iiw-0v-sjW"/>
+                            <constraint firstItem="cIo-rk-DJB" firstAttribute="centerX" secondItem="iKs-xT-cqW" secondAttribute="centerX" multiplier="0.5" id="o6H-bf-RQw"/>
+                            <constraint firstItem="ebD-Yj-47L" firstAttribute="centerX" secondItem="iKs-xT-cqW" secondAttribute="centerX" id="oYV-FK-lyp"/>
+                            <constraint firstItem="cIo-rk-DJB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" constant="40" id="rCm-DP-dfM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iKs-xT-cqW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V9v-Jd-FPr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="39q-hZ-vD3">
+            <objects>
+                <viewController id="Wbm-nP-XQt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ROb-sf-vLe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherBG_Sun.png" translatesAutoresizingMaskIntoConstraints="NO" id="Snc-5a-UoF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jb-yg-d0B">
+                                <rect key="frame" x="175.5" y="312" width="63" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Snc-5a-UoF" secondAttribute="trailing" id="5qB-Fd-grz"/>
+                            <constraint firstItem="Snc-5a-UoF" firstAttribute="leading" secondItem="ROb-sf-vLe" secondAttribute="leading" id="dJm-xZ-VL0"/>
+                            <constraint firstAttribute="bottom" secondItem="Snc-5a-UoF" secondAttribute="bottom" id="lcl-z2-G4B"/>
+                            <constraint firstItem="4jb-yg-d0B" firstAttribute="centerY" secondItem="ROb-sf-vLe" secondAttribute="centerY" multiplier="0.75" id="pLg-fd-Yix"/>
+                            <constraint firstItem="Snc-5a-UoF" firstAttribute="top" secondItem="ROb-sf-vLe" secondAttribute="top" id="y5y-xq-xsq"/>
+                            <constraint firstItem="4jb-yg-d0B" firstAttribute="centerX" secondItem="ROb-sf-vLe" secondAttribute="centerX" id="ywT-Lt-nP6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IwW-uj-KxM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T6B-Fj-bDc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LI9-mg-Crf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1943" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zXX-SL-600">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yOQ-Lh-LM3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4L3-Uj-1I1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DIF-iE-MdT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNu-aY-0bd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WeatherBG_Sun.png" width="180" height="320.16000366210938"/>
+    </resources>
+</document>
