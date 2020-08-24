@@ -1,0 +1,26 @@
+{
+  "loginUsers": [
+    {
+      "id": 0,
+      "name": "kim",
+      "email": "kim@demo.com",
+      "password": "demo1234",
+      "location": {
+        "city": "seoul",
+        "state": "LA"
+      }
+    },
+    {
+      "password": "1234",
+      "email": "lee@demo.com",
+      "name": "lee",
+      "id": 1
+    },
+    {
+      "name": "James",
+      "password": "4321",
+      "email": "james@demo.com",
+      "id": 2
+    }
+  ]
+}
