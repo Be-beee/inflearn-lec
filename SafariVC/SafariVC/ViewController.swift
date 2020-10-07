@@ -11,7 +11,6 @@ import SafariServices
 
 
 // Safari Web View
-// 부제: 나는 왜 고생하며 웹뷰를 배웠나
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
